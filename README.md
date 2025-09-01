@@ -1,96 +1,59 @@
-# \# Knight Platformer
+Knight Platformer
 
-# 
+Knight Platformer is a 2D side-scrolling action platformer developed with Java Swing.
+The player controls a knight who must fight enemies, overcome hazards, and reach the goal across six different themed levels.
 
-# \*\*Knight Platformer\*\* is a 2D side-scrolling action platformer built in \*\*Java Swing\*\*.  
+![Uygulama Ekran Görüntüsü](images/image1.png)
+![Uygulama Ekran Görüntüsü](images/image2.png)
+![Uygulama Ekran Görüntüsü](images/image3.png)
+![Uygulama Ekran Görüntüsü](images/image4.png)
+![Uygulama Ekran Görüntüsü](images/image5.png)
 
-# You play as a knight who must battle enemies, survive environmental hazards, and reach the goal flag across multiple themed levels.
+Features
 
-# 
+Six unique themes: Desert, Snow, Rain, Wasteland, War, and Space
 
-# ---
+Combat system with light and heavy attacks, rolling, and knockback
 
-# 
+Enemy AI with multiple types such as Swordsman, Spearman, Brute, and Drone
 
-# \## ✨ Features
+Checkpoint and life system for fair progression
 
-# \- \*\*6 unique themes\*\*: Desert, Snow, Rain, Wasteland, War, and Space  
+Particle effects for weather and combat feedback
 
-# \- \*\*Enemy AI\*\* with different attack patterns (Swordsman, Spearman, Brute, Drone, etc.)  
+Fullscreen scaling that adapts to any screen resolution
 
-# \- \*\*Player mechanics\*\*: walking, jumping, rolling, light/heavy attacks  
+Level select menu with unlock progression
 
-# \- \*\*Combat system\*\* with damage, knockback, and invulnerability frames  
+Controls
+Left / Right or A / D : Move
+Space : Jump
+J : Light attack
+K : Heavy attack
+L : Roll
+P : Pause
+Enter : Return to level select
 
-# \- \*\*Checkpoint \& life system\*\* – respawn from the last checkpoint until all lives are lost  
+Building and Running
 
-# \- \*\*Level select menu\*\* with unlock progression  
+Make sure Java 8 or newer is installed.
 
-# \- \*\*Particle effects\*\* for weather and combat feedback (snowfall, rain, sparks)  
+Compile the sources:
+javac -d out src/*.java
 
-# \- \*\*Fullscreen scaling\*\* – the game automatically scales to your screen resolution while preserving aspect ratio  
+Package into a jar:
+jar cfe KnightPlatformer.jar Main -C out .
 
-# 
+Run the game:
+java -jar KnightPlatformer.jar
 
-# ---
+Project Structure
+GamePanel.java - main game loop, rendering, and updates
+Player.java - player logic, movement, combat
+Enemy.java and subclasses - enemy AI and behaviors
+Level.java - level design and world building
+Art.java - rendering utilities and sprites
+Rect.java, Point.java - helper classes
 
-# 
-
-# \## 🎮 Controls
-
-# | Key                | Action                  |
-
-# |--------------------|-------------------------|
-
-# | \*\*← / →\*\* or \*\*A / D\*\* | Move left / right     |
-
-# | \*\*Space\*\*          | Jump                    |
-
-# | \*\*J\*\*              | Light attack            |
-
-# | \*\*K\*\*              | Heavy attack            |
-
-# | \*\*L\*\*              | Roll / dodge            |
-
-# | \*\*P\*\*              | Pause / unpause         |
-
-# | \*\*Enter\*\*          | Return to level select  |
-
-# 
-
-# ---
-
-# 
-
-# \## 🛠️ Building and Running
-
-# 
-
-# \### Requirements
-
-# \- Java 8 (or later) installed
-
-# 
-
-# \### Compile \& Run (command line)
-
-# ```bash
-
-# \# Compile all source files into the 'out' folder
-
-# javac -d out src/\*.java
-
-# 
-
-# \# Package into a runnable JAR (replace Main with your entry class name)
-
-# jar cfe KnightPlatformer.jar Main -C out .
-
-# 
-
-# \# Run the game
-
-# java -jar KnightPlatformer.jar
-
-
-
+License
+This project is created for learning and personal use. You are free to modify and extend it for non-commercial purposes.
